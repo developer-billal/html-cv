@@ -1,0 +1,103 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	list-style: none;
+}
+.parentContainer{
+	max-width: 900px;
+	margin: 0 auto;
+}
+.size{
+	max-width: 770px;
+	margin: 0 auto;
+	border: ridge 2px gray;
+	box-shadow: -1px -1px 5px gray;
+	margin: 10px;
+	background: #f4f0f0;
+}
+
+img{
+	width: 130px;
+	height: 160px;
+	transition: 1s;
+}
+
+
+h1{
+	text-align: center;
+	padding: 10px;
+}
+
+.contactInfo{
+	float: left;
+	margin-top: 59px;
+	padding-left: 10px
+}
+
+.profileImg{
+	float: right;
+}
+
+.headerCont::after{
+	content: '';
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 2px;
+	background: gray;
+}
+
+h2,p{
+	clear: both;
+}
+
+
+.university, .hsc, .ssc{
+
+}
+
+.university, .hsc, .ssc, 
+.computer_skill, 
+.programming_skill, .language_skill, .aboutMe{
+	background: #efe7e7;
+	padding: 10px;
+}
+
+h2::after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: gray;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contactInfo h2::after,.aboutMe h2::after{
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 450px){
+	.contactInfo, img{
+        float: none;
+	}
+
+	.profileImg{
+		float: left;
+	}
+
+	img{
+		margin-top: -50px;
+		padding-left: 10px;
+	}
+}
+
+.computer_skill li, .programming_skill li, 
+.language_skill li{
+	font-weight: bold;
+}
